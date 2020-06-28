@@ -18,7 +18,7 @@ public class SwiftyContainerBuilder: SwiftyContainerBuilderable {
     
     private let dependency: SwiftyDependency
     
-    init(dependency: SwiftyDependency) {
+    public init(dependency: SwiftyDependency) {
         self.dependency = dependency
     }
     
