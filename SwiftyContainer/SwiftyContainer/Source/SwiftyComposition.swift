@@ -16,10 +16,10 @@ public protocol SwiftyComponentable {
     var bottomMarginOFfset: CGFloat { get }
 }
 
-private struct SwiftyDefaultComponent: SwiftyComponentable {
-    var leftMarginOffset: CGFloat { 10 }
-    var rightMarginOffset: CGFloat { -10 }
-    var bottomMarginOFfset: CGFloat { 10 }
+public struct SwiftyDefaultComponent: SwiftyComponentable {
+    public var leftMarginOffset: CGFloat { 10 }
+    public var rightMarginOffset: CGFloat { -10 }
+    public var bottomMarginOFfset: CGFloat { 10 }
 }
 
 public protocol SwiftyDependency {
@@ -42,10 +42,10 @@ private class SwiftyContainerDependency: SwiftyDependency {
 }
 
 public enum SwiftyCompositionContainer {
-    static func resolve (
+    public static func resolve (
         parentsView: UIView,
         animationView: UIView,
-        component: SwiftyComponentable = SwiftyDefaultComponent()
+        component: SwiftyComponentable
     ) -> SwiftyDependency {
         return SwiftyContainerDependency (
             parentsView: parentsView,

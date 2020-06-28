@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "SwiftyContainer"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Simple animation SwiftyContainer."
   spec.homepage     = "https://github.com/jungseungyeo/SwiftyContainer"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
