@@ -1,0 +1,6 @@
+module Pods_ExampleSwiftyContainer {
+  umbrella header "Pods-ExampleSwiftyContainer-umbrella.h"
+
+  export *
+  module * { export * }
+}

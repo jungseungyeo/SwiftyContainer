@@ -1,0 +1,16 @@
+PODS:
+  - SwiftyContainer (0.0.3)
+
+DEPENDENCIES:
+  - SwiftyContainer
+
+SPEC REPOS:
+  trunk:
+    - SwiftyContainer
+
+SPEC CHECKSUMS:
+  SwiftyContainer: 51a0544ae76ba33618ab43d70af6bcf91265617b
+
+PODFILE CHECKSUM: 1e6a63ea4c8ecbb1f762465bb5ae36fe4f235a87
+
+COCOAPODS: 1.9.3

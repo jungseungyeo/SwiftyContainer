@@ -1,0 +1,6 @@
+module SwiftyContainer {
+  umbrella header "SwiftyContainer-umbrella.h"
+
+  export *
+  module * { export * }
+}

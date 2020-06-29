@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ops-sU-CWK" customClass="ContainerView" customModule="ExampleSwiftyContainer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maru" translatesAutoresizingMaskIntoConstraints="NO" id="5Ti-Ez-fwj">
+                    <rect key="frame" x="28" y="50" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="9xG-kv-lvh"/>
+                        <constraint firstAttribute="width" constant="100" id="iX3-fZ-iKl"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0f-a2-wnk">
+                    <rect key="frame" x="153" y="36" width="240" height="128"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ContainerView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Bb-QR-QA7">
+                            <rect key="frame" x="14" y="16" width="112" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImF-6y-OdP">
+                            <rect key="frame" x="14" y="54" width="77" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mm9-ws-GkO">
+                            <rect key="frame" x="14" y="90" width="46" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHt-8j-KRq">
+                            <rect key="frame" x="114" y="90" width="46" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="ZY6-nh-yn3"/>
+                        <constraint firstAttribute="height" constant="128" id="aXw-rX-r6g"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pPy-fz-jhJ" firstAttribute="trailing" secondItem="V0f-a2-wnk" secondAttribute="trailing" constant="32" id="F7T-LS-VY6"/>
+                <constraint firstItem="5Ti-Ez-fwj" firstAttribute="leading" secondItem="pPy-fz-jhJ" secondAttribute="leading" constant="28" id="Geu-xm-pXb"/>
+                <constraint firstItem="5Ti-Ez-fwj" firstAttribute="centerY" secondItem="Ops-sU-CWK" secondAttribute="centerY" id="ZEG-Ln-28n"/>
+                <constraint firstItem="V0f-a2-wnk" firstAttribute="centerY" secondItem="5Ti-Ez-fwj" secondAttribute="centerY" id="frR-VO-Ziu"/>
+                <constraint firstItem="V0f-a2-wnk" firstAttribute="leading" secondItem="5Ti-Ez-fwj" secondAttribute="trailing" constant="25" id="wh2-Tb-477"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="pPy-fz-jhJ"/>
+            <point key="canvasLocation" x="-102.89855072463769" y="42.857142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="maru" width="256" height="256"/>
+    </resources>
+</document>
