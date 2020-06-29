@@ -16,6 +16,7 @@ class SwiftyContainerTests: XCTestCase {
     struct Const {
         static let parentsView: UIView = UIView(frame: .zero)
         static let animationView: UIView = UIView(frame: .zero)
+        static let component: SwiftyComponentable = SwiftyDefaultComponent()
     }
     
     override func setUp() {
@@ -24,7 +25,8 @@ class SwiftyContainerTests: XCTestCase {
         // give
         let composition = SwiftyCompositionContainer.resolve(
             parentsView: Const.parentsView,
-            animationView: Const.animationView
+            animationView: Const.animationView,
+            component: Const.component
         )
         
         containerInteractor = SwiftyContainerBuilder(dependency: composition).create() as? SwiftyContainerInteractor
