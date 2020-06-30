@@ -12,7 +12,7 @@
 ----
 
 ```swift
-import SiwftyContainer
+import SwiftyContainer
 
 // crate Interactor
 lazy var swiftyContainerInteractor: SwiftyContainerInteractorable = {
